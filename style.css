@@ -32,16 +32,23 @@ header {
   border-bottom: 1px solid white;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    padding: 30px;
+  }
+}
+
 nav {
-  width: 400px;
+  width: fit-content;
   display: flex;
   justify-content: space-around;
-
+  gap: 50px;
 }
 
 a {
   color: white;
   text-decoration: none;
+  text-wrap: nowrap;
 }
 
 .selected {
@@ -139,6 +146,24 @@ main {
 .text {
   line-height: 30px;
   text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 300px;
+    width: 380px;
+    gap: 30px;
+  }
+
+  .photo {
+    height: 150px;
+    width: 150px;
+  }
 }
 
 footer {

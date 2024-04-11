@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 100vw;
-  background-color: black;
+  background-color: rgb(114, 114, 114);
 }
 
 header {
@@ -28,8 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: white;
-  font-size: 15px;
-  border-bottom: 1px solid white;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -49,22 +48,28 @@ a {
   color: white;
   text-decoration: none;
   text-wrap: nowrap;
+  cursor: default;
 }
 
 .selected {
   color: #65c7ff;
-  text-decoration: underline;
 }
 
 a:hover {
   text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #00a2ff,
-      0 0 45px #00a2ff,
-      0 0 55px #00a2ff;
-  text-decoration: underline;
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #00a2ff,
+    0 0 45px #00a2ff,
+    0 0 55px #00a2ff;
+  cursor: pointer;
+}
+
+.selected:hover {
+  text-shadow: none;
+  cursor: default;
+  text-decoration: none;
 }
 
 main {
@@ -73,7 +78,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #292929;
+  background-color: rgb(70, 70, 70);
   color: white;
   padding: 100px 0;
 }
@@ -132,7 +137,7 @@ main {
 
 .story {
   height: 600px;
-  width: 400px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -145,7 +150,6 @@ main {
 
 .text {
   line-height: 30px;
-  text-align: justify;
 }
 
 @media screen and (max-width: 900px) {
@@ -163,6 +167,10 @@ main {
   .photo {
     height: 150px;
     width: 150px;
+  }
+
+  .story {
+    width: 380px;
   }
 }
 
